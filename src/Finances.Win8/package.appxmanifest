@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity
+    Name="082780eb-a571-4882-99d9-4fbceb16af12"
+    Version="1.0.0.0"
+    Publisher="CN=Brendan" />
+
+  <Properties>
+    <DisplayName>Finances.Win8</DisplayName>
+    <Description>Finances.Win8</Description>
+    <PublisherDisplayName>Brendan</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2</OSMinVersion>
+    <OSMaxVersionTested>6.2</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+
+  <Applications>
+    <Application 
+      Id="App"
+      StartPage="default.html">
+
+      <VisualElements
+        DisplayName="Finances.Win8"
+        Logo="images\logo.png"
+        SmallLogo="images\smalllogo.png"
+        Description="Finances.Win8"
+        ForegroundText="light"
+        BackgroundColor="#000000">
+
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="images\splashscreen.png" />
+
+      </VisualElements>
+    </Application>
+  </Applications>
+
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+
+</Package>
