@@ -47,15 +47,20 @@
         }
 
     .expenses .grouplist .win-item {
-        -ms-grid-columns: 110px 1fr;
+        -ms-grid-columns: 1fr 110px;
         -ms-grid-rows: 1fr;
         display: -ms-grid;
         height: 110px;
         width: 472px;
     }
 
-        .expenses .grouplist .win-item .item-info {
+        .expenses .grouplist .win-item .item-image {
             -ms-grid-column: 2;
+            margin-left: 10px;
+        }
+    
+        .expenses .grouplist .win-item .item-info {
+            -ms-grid-column: 1;
             margin-left: 10px;
         }
 
