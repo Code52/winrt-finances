@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>RoamingSettings</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.0.6/css/ui-dark.css" rel="stylesheet">
+    <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
+    <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
+    <script src="/js/Data/roaming.js"></script>
+    -<script src="/js/Data/dropbox.js"></script>
+
+    <!-- RoamingSettings references -->
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/default.js"></script>
+    <script src="/js/page.js"></script>
+</head>
+<body>
+    <div class="buttons">
+        <button id="readFile">Load File</button>
+        <button id="createFile">Create File</button>
+        <button id="listFiles">List Files</button>
+    </div>
+
+    <div id="FileList" data-win-control="WinJS.UI.ListView"></div>
+</body>
+</html>
