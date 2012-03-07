@@ -13,7 +13,7 @@
         // TODO: Respond to changes in viewState.
     }
 
-    WinJS.UI.Pages.define("/html/incomes.html", {
+    WinJS.UI.Pages.define("/html/goals.html", {
         ready: ready,
         updateLayout: updateLayout
     });

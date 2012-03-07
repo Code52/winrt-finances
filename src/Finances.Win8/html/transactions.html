@@ -3,13 +3,13 @@
 <head>
     <meta charset="utf-8">
     <title>expenses</title>
-    <!-- WinJS references -->
+    
     <link href="//Microsoft.WinJS.0.6/css/ui-dark.css" rel="stylesheet">
     <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
     <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
     <link href="/css/default.css" rel="stylesheet">
-    <link href="/css/expenses.css" rel="stylesheet">
-    <script src="/js/expenses.js"></script>
+    <link href="/css/transactions.css" rel="stylesheet">
+    <script src="/js/transactions.js"></script>
     <script type="text/javascript">WinJS.UI.processAll();</script>
 </head>
 <body>
@@ -17,17 +17,16 @@
         <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
         <div class="item-info">
             <h4 class="item-title" data-win-bind="textContent: title"></h4>
-            <!--<h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>-->
             <h4 class="item-description" data-win-bind="textContent: description"></h4>
         </div>
     </div>
     <div class="expenses fragment">
         <header aria-label="Header content" role="banner">
             <button class="win-backbutton" aria-label="Back" disabled></button>
-            <h1 class="titlearea win-type-ellipsis" style="-ms-grid-column: 2;"><span class="pagetitle">Expenses</span></h1>
+            <h1 class="titlearea win-type-ellipsis"><span class="pagetitle">Transactions</span></h1>
         </header>
         <section aria-label="Main content" role="main">
-            <div class="content" style="-ms-grid-rows: 1fr;">
+            <div class="content">
                 <div class="left">
                     <div class="chart">
                         <h2>Breakdown</h2>
@@ -39,7 +38,7 @@
                     </div>
                 </div>
                 <div class="right">
-                    <div class="grouplist" data-win-control="WinJS.UI.ListView" style="left: -8px; top: 1.5px;"></div>
+                    <div class="grouplist" data-win-control="WinJS.UI.ListView"></div>
                 </div>
             </div>
         </section>

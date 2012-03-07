@@ -1,0 +1,8 @@
+﻿.reports p {
+    margin-left: 120px;
+}
+
+.reports h1.titlearea 
+{
+	-ms-grid-column: 2;
+}

@@ -2,16 +2,17 @@
 <html>
 <head>
     <meta charset="utf-8">
+    <title>home</title>
 
     <link href="//Microsoft.WinJS.0.6/css/ui-dark.css" rel="stylesheet">
     <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
     <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
     
     <link href="/css/default.css" rel="stylesheet">
-    <link href="/css/groupedItemsPage.css" rel="stylesheet">
+    <link href="/css/home.css" rel="stylesheet">
 
     <script src="/js/data.js"></script>
-    <script src="/js/groupedItemsPage.js"></script>
+    <script src="/js/home.js"></script>
 	<script type="text/javascript">WinJS.UI.processAll();</script>
 </head>
 <body>
@@ -24,17 +25,16 @@
                 <span class="pagetitle">My Finances</span>
             </h1>
 			<ul class="menu" style="-ms-grid-column: 2;">
-				
-				<li><a id="expenses">Reports</a></li>
+				<li><a id="reports">Reports</a></li>
 				<li><a id="goals">Goals</a></li>
+				<li><a id="transactions">Transactions</a></li>
 				<li><a class="selected" id="dashboard">Dashboard</a></li>
 			</ul>
 			</div>
-
         </header>
         <section aria-label="Main content" role="main">
 			
-			<h2 style="margin-top:20px; margin-left:20px">TODO: FlipView for quickly navigating through charts?</h2>
+			<h2 style="margin-top:20px; margin-left:20px">TODO: FlipView for quickly navigating through content?</h2>
 
         	<div id="currentReports"
 				 data-win-control="WinJS.UI.FlipView">
