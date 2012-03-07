@@ -127,3 +127,29 @@
         margin-left: 26px;
     }
 }
+
+	header[role=banner]  ul.menu li {
+		float: right;
+		list-style-type:none;
+		display:inline;
+		padding-right:30px;
+		font-size:28pt;
+	}
+	
+	a { color: #CACACA; }
+	a.selected { color: white; }
+	
+.panel {
+		-ms-grid-column-span: 2; 
+		-ms-grid-column: 0; 
+		-ms-grid-columns: 500px 1fr; 
+		display: -ms-grid;
+}
+
+.panel h1 {
+	-ms-grid-column: 0;
+}
+	
+.panel ul {
+	-ms-grid-column: 0; margin-top: 48px;
+}

@@ -29,12 +29,13 @@
         }
 
         .fragment header[role=banner] .titlearea {
-            -ms-grid-column: 2;
+            -ms-grid-column: 0;
             margin-top: 37px;
         }
 
             .fragment header[role=banner] .titlearea .pagetitle {
                 width: calc(100% - 20px);
+                font-size: 54pt;
             }
 			
 			 .fragment section[role=main] .pagetitle {
@@ -79,4 +80,9 @@
         .fragment header[role=banner] .win-backbutton {
             margin-left: 29px;
         }
+}
+
+	
+body {
+	background: -ms-linear-gradient(top, rgba(0,183,234,1) 0%,rgba(0,86,224,1) 100%); 
 }
