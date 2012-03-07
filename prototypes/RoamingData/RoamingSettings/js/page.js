@@ -32,7 +32,18 @@
         });
     }
 
+    function buildDataSourceList() {
+        var select = id('chooseDataSource');
+        for (var source in Finances.Data) {
+            var el = document.createElement('option');
+            el.innerText = source;
+            select.options.add(el);
+        }
+    }
+
     function init() {
+        buildDataSourceList();
+
         WinJS.UI.processAll();
         id('readFile').addEventListener('click', readFile);
         id('createFile').addEventListener('click', createFile);
