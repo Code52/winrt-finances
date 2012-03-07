@@ -57,7 +57,7 @@
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
     <Content Include="js\Data\dropbox.js" />
-    <Content Include="js\Data\roaming.js" />
+    <Content Include="js\Data\winrt.js" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
     <Content Include="js\page.js" />
