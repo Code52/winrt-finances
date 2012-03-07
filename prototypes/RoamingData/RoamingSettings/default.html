@@ -8,7 +8,7 @@
     <link href="//Microsoft.WinJS.0.6/css/ui-dark.css" rel="stylesheet">
     <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
     <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
-    <script src="/js/Data/roaming.js"></script>
+    <script src="/js/Data/winrt.js"></script>
     -<script src="/js/Data/dropbox.js"></script>
 
     <!-- RoamingSettings references -->
@@ -21,6 +21,8 @@
         <button id="readFile">Load File</button>
         <button id="createFile">Create File</button>
         <button id="listFiles">List Files</button>
+        <select id="chooseDataSource">
+        </select>
     </div>
 
     <div id="FileList" data-win-control="WinJS.UI.ListView"></div>

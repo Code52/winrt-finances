@@ -32,11 +32,32 @@
         });
     }
 
+    function buildDataSourceList() {
+        var select = id('chooseDataSource');
+        for (var source in Finances.Data) {
+            var el = document.createElement('option');
+            el.innerText = source;
+            select.options.add(el);
+        }
+    }
+
+    function changeDataSource() {
+        var val = id('chooseDataSource').value;
+        if (!Finances.Data.hasOwnProperty(val)) return;
+
+        dataStore = Finances.Data[val];
+        while (fileList.length > 0) fileList.pop();     // TODO: Find a better way to clear the array, does recreating it break the binding?
+        listFiles();
+    }
+
     function init() {
+        buildDataSourceList();
+
         WinJS.UI.processAll();
         id('readFile').addEventListener('click', readFile);
         id('createFile').addEventListener('click', createFile);
         id('listFiles').addEventListener('click', listFiles);
+        id('chooseDataSource').addEventListener('change', changeDataSource);
         
         var fileListView = id('FileList').winControl;
         ui.setOptions(fileListView, {
