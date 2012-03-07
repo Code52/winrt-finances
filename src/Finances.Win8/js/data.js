@@ -8,59 +8,45 @@
     // These three strings encode placeholder images. You will want to set the
     // backgroundImage property in your real data to be URLs to images.
     var lightGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY7h4+cp/AAhpA3h+ANDKAAAAAElFTkSuQmCC";
-    var mediumGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY5g8dcZ/AAY/AsAlWFQ+AAAAAElFTkSuQmCC";
     var darkGray = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAANSURBVBhXY3B0cPoPAANMAcOba1BlAAAAAElFTkSuQmCC";
 
     // Each of these sample groups must have a unique key to be displayed
     // separately.
-    var sampleGroups = [
-        { key: "group1", title: "Menu Items", subtitle: "Group Subtitle: 1", backgroundImage: darkGray, description: groupDescription },
-        { key: "group2", title: "Menu Items 2", subtitle: "Group Subtitle: 2", backgroundImage: lightGray, description: groupDescription },
-        { key: "group3", title: "Menu Items 3", subtitle: "Group Subtitle: 3", backgroundImage: mediumGray, description: groupDescription },
-        { key: "group4", title: "Menu Items 4", subtitle: "Group Subtitle: 4", backgroundImage: lightGray, description: groupDescription },
-        { key: "group5", title: "Menu Items 5", subtitle: "Group Subtitle: 5", backgroundImage: mediumGray, description: groupDescription },
+    var categories = [
+        { key: "group1", title: "Expenses", backgroundImage: darkGray, },
+        { key: "group2", title: "Incomes", backgroundImage: lightGray, },
     ];
+
+    var tags = [
+        { key: "group1", title: "Food", subtitle: "Group Subtitle: 1", backgroundImage: darkGray },
+        { key: "group2", title: "Travel", subtitle: "Group Subtitle: 2", backgroundImage: lightGray },
+        { key: "group3", title: "Petrol", subtitle: "Group Subtitle: 3", backgroundImage: lightGray },
+        { key: "group4", title: "Work", subtitle: "Group Subtitle: 4", backgroundImage: darkGray },
+    ];
+
 
     // Each of these sample items should have a reference to a particular
     // group.
     var sampleItems = [
-        { group: sampleGroups[0], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-        { group: sampleGroups[0], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-        { group: sampleGroups[0], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-        { group: sampleGroups[0], title: "Item Title: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-        { group: sampleGroups[0], title: "Item Title: 5", subtitle: "Item Subtitle: 5", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-
-        { group: sampleGroups[1], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-        { group: sampleGroups[1], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-        { group: sampleGroups[1], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-
-        { group: sampleGroups[2], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-        { group: sampleGroups[2], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-        { group: sampleGroups[2], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-        { group: sampleGroups[2], title: "Item Title: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-        { group: sampleGroups[2], title: "Item Title: 5", subtitle: "Item Subtitle: 5", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-        { group: sampleGroups[2], title: "Item Title: 6", subtitle: "Item Subtitle: 6", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-        { group: sampleGroups[2], title: "Item Title: 7", subtitle: "Item Subtitle: 7", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-
-        { group: sampleGroups[3], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-        { group: sampleGroups[3], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-        { group: sampleGroups[3], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-        { group: sampleGroups[3], title: "Item Title: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-        { group: sampleGroups[3], title: "Item Title: 5", subtitle: "Item Subtitle: 5", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
-        { group: sampleGroups[3], title: "Item Title: 6", subtitle: "Item Subtitle: 6", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-
-        { group: sampleGroups[4], title: "Item Title: 1", subtitle: "Item Subtitle: 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-        { group: sampleGroups[4], title: "Item Title: 2", subtitle: "Item Subtitle: 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
-        { group: sampleGroups[4], title: "Item Title: 3", subtitle: "Item Subtitle: 3", description: itemDescription, content: itemContent, backgroundImage: lightGray },
-        { group: sampleGroups[4], title: "Item Title: 4", subtitle: "Item Subtitle: 4", description: itemDescription, content: itemContent, backgroundImage: mediumGray },
+        { category: categories[0], title: "Expense 1", description: itemDescription, content: itemContent, backgroundImage: lightGray },
+        { category: categories[0], title: "Expense 2", description: itemDescription, content: itemContent, backgroundImage: darkGray },
+        { category: categories[0], title: "Expense 4", description: itemDescription, content: itemContent, backgroundImage: darkGray },
+        { category: categories[1], title: "Income 1", description: itemDescription, content: itemContent, backgroundImage: darkGray },
+        { category: categories[1], title: "Income 3", description: itemDescription, content: itemContent, backgroundImage: lightGray },
+        { category: categories[0], title: "Expense 2", description: itemDescription, content: itemContent, backgroundImage: lightGray },
+        { category: categories[1], title: "Income 3", description: itemDescription, content: itemContent, backgroundImage: darkGray },
+        { category: categories[0], title: "Expense 4", description: itemDescription, content: itemContent, backgroundImage: lightGray },
+        { category: categories[1], title: "Income 5", description: itemDescription, content: itemContent, backgroundImage: darkGray },
+        { category: categories[0], title: "Expense 6", description: itemDescription, content: itemContent, backgroundImage: darkGray },
+        { category: categories[1], title: "Income 7", description: itemDescription, content: itemContent, backgroundImage: lightGray },
     ];
 
     function groupKeySelector(item) {
-        return item.group.key;
+        return item.category.key;
     }
 
     function groupDataSelector(item) {
-        return item.group;
+        return item.category;
     }
 
     // This function returns a WinJS.Binding.List containing only the items
@@ -72,6 +58,13 @@
     var list = new WinJS.Binding.List();
     var groupedItems = list.createGrouped(groupKeySelector, groupDataSelector);
 
+    var user = {
+        firstName: "Tommy",
+        lastName: "Tutone",
+        history: groupedItems.dataSource,
+        notifications: []
+    }
+
     // TODO: Replace the data with your real data.
     // You can add data from asynchronous sources whenever it becomes available.
     sampleItems.forEach(function (item) {
@@ -79,8 +72,9 @@
     });
 
     WinJS.Namespace.define("data", {
-        items: groupedItems,
-        groups: groupedItems.groups,
-        getItemsFromGroup: getItemsFromGroup
+        user : user
+        //items: groupedItems,
+        // groups: groupedItems.groups,
+        // getItemsFromGroup: getItemsFromGroup
     });
 })();

@@ -10,11 +10,11 @@
 
         ready : function(element, options) {
 
-            items = data.items;
+            items = data.user.history;
 
             var listView = element.querySelector(".grouplist").winControl;
             ui.setOptions(listView, {
-                itemDataSource: items.dataSource,
+                itemDataSource: items,
                 itemTemplate: element.querySelector(".itemtemplate"),
                 oniteminvoked: this.itemInvoked.bind(this)
             });
