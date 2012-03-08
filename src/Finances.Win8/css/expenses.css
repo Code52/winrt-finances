@@ -58,7 +58,7 @@
             -ms-grid-column: 2;
             margin-left: 10px;
         }
-    
+
         .expenses .grouplist .win-item .item-info {
             -ms-grid-column: 1;
             margin-left: 10px;
@@ -129,3 +129,41 @@
         margin-left: 100px;
     }
 }
+
+section[role=main] .content {
+    -ms-grid-columns: 120px 500px 24px 1fr 50px;
+    display: -ms-grid;
+    margin-top: 24px;
+}
+
+    section[role=main] .content, section[role=main] .content .left, section[role=main] .content .right {
+        width: 100%;
+        height: 100%;
+    }
+
+        section[role=main] .content .left {
+            -ms-grid-column: 2;
+        }
+
+            section[role=main] .content .left .chart {
+                margin-bottom: 10px;
+            }
+
+                section[role=main] .content .left .chart h2 {
+                    font-weight: bold;
+                    margin-bottom: 6px;
+                }
+
+                section[role=main] .content .left .chart .region {
+                    background: white;
+                    width: 500px;
+                    height: 250px;
+                }
+
+        section[role=main] .content .right {
+            -ms-grid-column: 4;
+        }
+
+            section[role=main] .content .right .win-listview {
+                height: 100%;
+            }

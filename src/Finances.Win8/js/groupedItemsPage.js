@@ -40,18 +40,9 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-            //var listView = element.querySelector(".groupeditemslist").winControl;
-
-            //ui.setOptions(listView, {
-            //    groupHeaderTemplate: element.querySelector(".headerTemplate"),
-            //    itemTemplate: element.querySelector(".itemtemplate"),
-            //    oniteminvoked: this.itemInvoked.bind(this)
-            //});
-            //this.updateLayout(element, appView.value);
-
-            // attach event handlers
             element.querySelector("#expenses").onclick = function () { nav.navigate("/html/expenses.html"); };
-            element.querySelector("#incomes").onclick = function () { nav.navigate("/html/incomes.html"); };
+            element.querySelector("#goals").onclick = function () { nav.navigate("/html/expenses.html"); }; // TODO: new page
+            element.querySelector("#dashboard").onclick = function () { nav.navigate("/html/expenses.html"); }; // TODO: new page
         },
 
         // This function updates the page layout in response to viewState changes.

@@ -3,38 +3,48 @@
 <head>
     <meta charset="utf-8">
     <title>expenses</title>
-
     <!-- WinJS references -->
     <link href="//Microsoft.WinJS.0.6/css/ui-dark.css" rel="stylesheet">
     <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
     <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
-    
+    <link href="/css/default.css" rel="stylesheet">
     <link href="/css/expenses.css" rel="stylesheet">
     <script src="/js/expenses.js"></script>
-	<script type="text/javascript">WinJS.UI.processAll();</script>
+    <script type="text/javascript">WinJS.UI.processAll();</script>
 </head>
 <body>
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
         <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
         <div class="item-info">
             <h4 class="item-title" data-win-bind="textContent: title"></h4>
-            <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
+            <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle">
+            </h6>
             <h4 class="item-description" data-win-bind="textContent: description"></h4>
         </div>
-        
     </div>
-
     <div class="expenses fragment">
         <header aria-label="Header content" role="banner">
             <button class="win-backbutton" aria-label="Back" disabled></button>
-            <h1 class="titlearea win-type-ellipsis">
-                <span class="pagetitle">Expenses</span>
-            </h1>
+			<div class="panel" style="-ms-grid-column: 2;">
+				<h1 class="titlearea win-type-ellipsis"><span class="pagetitle">Expenses</span></h1>
+			</div>
         </header>
         <section aria-label="Main content" role="main">
-            <img src="/images/Microsoft.Expression.Blend.Html.Intrinsic.Img.png" style="position: absolute; right: 1057px; left: 103px; bottom: 386px; top: 176px; width: 435px; height: 237px;">
-			<img src="/images/Microsoft.Expression.Blend.Html.Intrinsic.Img.png" style="position: absolute; right: 1057px; left: 103px; bottom: 386px; top: 442px; width: 435px; height: 237px;">
-        	<div class="grouplist" data-win-control="WinJS.UI.ListView" style="left: 580px; width: 1186px; min-height: 632px;"></div>
+            <div class="content" style="-ms-grid-rows: 1fr;">
+                <div class="left">
+                    <div class="chart">
+                        <h2>Breakdown</h2>
+                        <div class="region"></div>
+                    </div>
+                    <div class="chart">
+                        <h2>History</h2>
+                        <div class="region"></div>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="grouplist" data-win-control="WinJS.UI.ListView" style="left: -8px; top: 1.5px;"></div>
+                </div>
+            </div>
         </section>
     </div>
 </body>

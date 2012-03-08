@@ -8,8 +8,8 @@
     app.onactivated = function (eventObject) {
         if (eventObject.detail.kind === Windows.ApplicationModel.Activation.ActivationKind.launch) {
             if (eventObject.detail.previousExecutionState !== Windows.ApplicationModel.Activation.ApplicationExecutionState.terminated) {
-                // TODO: This application has been newly launched. Initialize 
-                // your application here.
+                // TODO: This application has been newly launched. 
+                // Initialize your application here.
             } else {
                 // TODO: This application has been reactivated from suspension. 
                 // Restore application state here.
