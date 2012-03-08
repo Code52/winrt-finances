@@ -6,7 +6,7 @@
     var utils = WinJS.Utilities;
     var items;
 
-    ui.Pages.define("/html/expenses.html", {
+    ui.Pages.define("/html/transactions.html", {
 
         ready : function(element, options) {
 

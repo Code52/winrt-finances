@@ -40,7 +40,7 @@
         // This function is called whenever a user navigates to this page. It
         // populates the page elements with the app's data.
         ready: function (element, options) {
-            element.querySelector("#expenses").onclick = function () { nav.navigate("/html/expenses.html"); };
+            element.querySelector("#transactions").onclick = function () { nav.navigate("/html/transactions.html"); };
             element.querySelector("#goals").onclick = function () { nav.navigate("/html/expenses.html"); }; // TODO: new page
             element.querySelector("#dashboard").onclick = function () { nav.navigate("/html/expenses.html"); }; // TODO: new page
         },
