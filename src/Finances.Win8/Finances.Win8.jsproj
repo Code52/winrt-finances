@@ -56,12 +56,12 @@
     <Content Include="default.html" />
     <Content Include="css\default.css" />
     <Content Include="css\itemDetailPage.css" />
-    <Content Include="css\groupedItemsPage.css" />
+    <Content Include="css\home.css" />
     <None Include="Finances.Win8_TemporaryKey.pfx" />
     <Content Include="html\transactions.html" />
     <Content Include="html\groupDetailPage.html" />
     <Content Include="html\itemDetailPage.html" />
-    <Content Include="html\groupedItemsPage.html" />
+    <Content Include="html\home.html" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
@@ -71,7 +71,7 @@
     <Content Include="js\navigator.js" />
     <Content Include="js\data.js" />
     <Content Include="js\itemDetailPage.js" />
-    <Content Include="js\groupedItemsPage.js" />
+    <Content Include="js\home.js" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS, Version=0.6" />

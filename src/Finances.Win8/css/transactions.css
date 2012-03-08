@@ -4,6 +4,11 @@
     margin-bottom: 20px;
 }
 
+.expenses h1.titlearea 
+{
+	-ms-grid-column: 2;
+}
+
 .expenses .grouplist {
     height: 100%;
     position: relative;
@@ -132,6 +137,7 @@
 
 section[role=main] .content {
     -ms-grid-columns: 120px 500px 24px 1fr 50px;
+	-ms-grid-rows: 1fr;
     display: -ms-grid;
     margin-top: 24px;
 }
