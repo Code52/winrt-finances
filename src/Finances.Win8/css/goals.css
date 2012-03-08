@@ -1,0 +1,8 @@
+﻿.goals p {
+    margin-left: 120px;
+}
+
+.goals h1.titlearea 
+{
+	-ms-grid-column: 2;
+}

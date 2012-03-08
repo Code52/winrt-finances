@@ -52,25 +52,27 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="css\goals.css" />
+    <Content Include="css\reports.css" />
     <Content Include="css\transactions.css" />
     <Content Include="default.html" />
     <Content Include="css\default.css" />
-    <Content Include="css\itemDetailPage.css" />
     <Content Include="css\home.css" />
     <None Include="Finances.Win8_TemporaryKey.pfx" />
+    <Content Include="html\goals.html" />
+    <Content Include="html\reports.html" />
     <Content Include="html\transactions.html" />
-    <Content Include="html\groupDetailPage.html" />
-    <Content Include="html\itemDetailPage.html" />
     <Content Include="html\home.html" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="js\goals.js" />
+    <Content Include="js\reports.js" />
     <Content Include="js\transactions.js" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
     <Content Include="js\data.js" />
-    <Content Include="js\itemDetailPage.js" />
     <Content Include="js\home.js" />
   </ItemGroup>
   <ItemGroup>
