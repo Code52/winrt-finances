@@ -12,15 +12,9 @@
 
     <script src="/js/data.js"></script>
     <script src="/js/groupedItemsPage.js"></script>
+	<script type="text/javascript">WinJS.UI.processAll();</script>
 </head>
 <body>
-    <!--<div class="itemtemplate" data-win-control="WinJS.Binding.Template">
-        <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
-        <div class="item-overlay">
-            <h4 class="item-title" data-win-bind="textContent: title"></h4>
-            <h6 class="item-subtitle win-type-ellipsis" data-win-bind="textContent: subtitle"></h6>
-        </div>
-    </div>-->
 
     <div class="fragment groupeditemspage">
         <header aria-label="Header content" role="banner">
@@ -40,8 +34,12 @@
         </header>
         <section aria-label="Main content" role="main">
 			
-			
-			<!--<div class="groupeditemslist" aria-label="List of groups" data-win-control="WinJS.UI.ListView" data-win-options="{ selectionMode: 'none' }"></div>-->
+			<h2 style="margin-top:20px; margin-left:20px">TODO: FlipView for quickly navigating through charts?</h2>
+
+        	<div id="currentReports"
+				 data-win-control="WinJS.UI.FlipView">
+        		
+			</div>
         </section>
     </div>
 </body>
