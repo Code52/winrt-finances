@@ -12,9 +12,9 @@
         this.io = ioHelper;
     }, {
         loadObject: function (fileName, def) {
-            return this.io.readText(fileName, '{}')
+            return this.io.readText(fileName, undefined)
                 .then(function (json) {
-                    return JSON.parse(json);
+                    return json ? JSON.parse(json) : def;
                 });
         },
         saveObject: function (fileName, obj) {
