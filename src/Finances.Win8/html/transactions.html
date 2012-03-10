@@ -14,10 +14,11 @@
 </head>
 <body>
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
-        <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+        <img class="item-image" src="#" data-win-bind="src: category.backgroundImage; alt: category.title" />
         <div class="item-info">
-            <h4 class="item-title" data-win-bind="textContent: title"></h4>
-            <h4 class="item-description" data-win-bind="textContent: description"></h4>
+            <h4 class="item-title" data-win-bind="textContent: category.title"></h4>
+            <h4 class="item-description" data-win-bind="textContent: content"></h4>
+            <h4 class="item-amount" data-win-bind="textContent: amount"></h4>
         </div>
     </div>
     <div class="expenses fragment">

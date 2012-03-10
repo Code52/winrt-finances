@@ -9,12 +9,11 @@
     ui.Pages.define("/html/transactions.html", {
 
         ready : function(element, options) {
-
-            items = data.user.history;
+            items = Finances.Data.groupedHistory;
 
             var listView = element.querySelector(".grouplist").winControl;
             ui.setOptions(listView, {
-                itemDataSource: items,
+                itemDataSource: items.dataSource,
                 itemTemplate: element.querySelector(".itemtemplate"),
                 oniteminvoked: this.itemInvoked.bind(this)
             });
@@ -24,6 +23,7 @@
     
         itemInvoked: function(eventObject) {
             var item = items.getAt(eventObject.detail.itemIndex);
+            console.log('Selected item: ' + JSON.stringify(item));
             // TODO: what should happen when you select an item in the list? anything?
             // nav.navigate("/html/itemDetailPage.html", { item: item });
         },
