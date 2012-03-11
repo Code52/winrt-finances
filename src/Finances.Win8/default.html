@@ -15,9 +15,8 @@
 </head>
 <body>
     <div id="contenthost" data-win-control="Finances.Win8.PageControlNavigator" data-win-options="{home: '/html/home.html'}"></div>
-    <div id="appbar" data-win-control="WinJS.UI.AppBar">
-        <a href="default.html">default.html</a>
-        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'cmd', label:'Command', icon:'placeholder'}"></button>
+    <div id="appbar" aria-label="Navigation Bar" data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" aria-label="Command" data-win-options="{id:'cmd', label:'Command', icon:'placeholder'}"></button>
     </div>
 </body>
 </html>
