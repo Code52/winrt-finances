@@ -181,3 +181,7 @@ section[role=main] .content {
             section[role=main] .content .right .win-listview {
                 height: 100%;
             }
+
+        #addTransaction {
+            float: right;
+        }
