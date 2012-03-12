@@ -1,4 +1,4 @@
-﻿(function () {
+(function () {
     "use strict";
 
     var dataStore = Finances.Data.localStore;
@@ -7,8 +7,23 @@
     WinJS.Namespace.define("Finances.Data", {
         data: {},
         groupedHistory: groupedItems,
+        categories: function () {
+            return Finances.Data.data.categories;
+        },
         save: function () {
             return dataStore.saveObject('finances.json', Finances.Data.data);
+        },
+        getCategory: function(key) {
+            var match = Finances.Data.data.categories.filter(function (val) { return key == val.key; });
+            return match.length > 0 ? match[0] : null;
+        },
+        addTransaction: function (category, amount, content) {
+            var category = this.getCategory(category);
+            if (category == null) return;
+            var newItem = { category: category, amount: amount, content: content };
+            Finances.Data.data.history.push(newItem);
+            Finances.Data.save();
+            list.push(newItem);
         }
     });
 
@@ -36,7 +51,6 @@
             Finances.Data.save().then(function () { console.log('Data saved!'); });
         }
     });
-
 
     function generateDefaultData() {
         // These three strings encode placeholder images. You will want to set the
