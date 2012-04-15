@@ -62,6 +62,8 @@
         .expenses .grouplist .win-item .item-image {
             -ms-grid-column: 2;
             margin-left: 10px;
+            max-width:  100px;
+            max-height:  100px;
         }
 
         .expenses .grouplist .win-item .item-info {
@@ -83,6 +85,12 @@
                 max-height: 60px;
                 overflow: hidden;
             }
+            .expenses .grouplist .win-item .item-info .item-amount {
+                position: absolute; 
+                right: 108px; 
+                bottom: 8px;
+                font-size: 36px;
+            }            
 
     .expenses .grouplist .win-horizontal.win-viewport .win-container {
         margin-bottom: 26px;
@@ -173,3 +181,7 @@ section[role=main] .content {
             section[role=main] .content .right .win-listview {
                 height: 100%;
             }
+
+        #addTransaction {
+            float: right;
+        }

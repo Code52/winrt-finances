@@ -67,6 +67,7 @@
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
+    <Content Include="js\data\winrt.js" />
     <Content Include="js\goals.js" />
     <Content Include="js\reports.js" />
     <Content Include="js\transactions.js" />

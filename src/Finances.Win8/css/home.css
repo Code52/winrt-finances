@@ -142,7 +142,7 @@
 .panel {
 		-ms-grid-column-span: 2; 
 		-ms-grid-column: 0; 
-		-ms-grid-columns: 500px 1fr; 
+		-ms-grid-columns: 350px 1fr; 
 		display: -ms-grid;
 }
 

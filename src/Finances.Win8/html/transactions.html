@@ -1,9 +1,8 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <title>expenses</title>
-    
     <link href="//Microsoft.WinJS.0.6/css/ui-dark.css" rel="stylesheet">
     <script src="//Microsoft.WinJS.0.6/js/base.js"></script>
     <script src="//Microsoft.WinJS.0.6/js/ui.js"></script>
@@ -14,16 +13,18 @@
 </head>
 <body>
     <div class="itemtemplate" data-win-control="WinJS.Binding.Template">
-        <img class="item-image" src="#" data-win-bind="src: backgroundImage; alt: title" />
+        <img class="item-image" src="#" data-win-bind="src: category.backgroundImage; alt: category.title" />
         <div class="item-info">
-            <h4 class="item-title" data-win-bind="textContent: title"></h4>
-            <h4 class="item-description" data-win-bind="textContent: description"></h4>
+            <h4 class="item-title" data-win-bind="textContent: category.title"></h4>
+            <h4 class="item-description" data-win-bind="textContent: content"></h4>
+            <h4 class="item-amount" data-win-bind="textContent: amount"></h4>
         </div>
     </div>
     <div class="expenses fragment">
         <header aria-label="Header content" role="banner">
             <button class="win-backbutton" aria-label="Back" disabled></button>
-            <h1 class="titlearea win-type-ellipsis"><span class="pagetitle">Transactions</span></h1>
+            <h1 class="titlearea win-type-ellipsis"><span class="pagetitle">transactions</span>
+            </h1>
         </header>
         <section aria-label="Main content" role="main">
             <div class="content">
@@ -38,10 +39,37 @@
                     </div>
                 </div>
                 <div class="right">
+                    <button id="addTransaction">Add a transaction</button>
                     <div class="grouplist" data-win-control="WinJS.UI.ListView"></div>
                 </div>
             </div>
         </section>
+    </div>
+    <div>
+        <div id="addTransactionFlyout" data-win-control="WinJS.UI.Flyout" aria-label="{Add transaction flyout}">
+            <form onsubmit="return false;" class="verticalStacking">
+            <div>
+                <label>
+                    Description<br />
+                    <input type="text" id="transaction-flyout-content" spellcheck="true" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Amount<br />
+                    <input type="number" id="transaction-flyout-amount" step=".01" />
+                </label>
+            </div>
+            <div>
+                <label>
+                    Category<br />
+                    <select id="transaction-flyout-category"></select>
+                </label>
+            </div>
+            <button id="transaction-flyout-submit">Submit</button>
+            <button id="transaction-flyout-cancel">Cancel</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
